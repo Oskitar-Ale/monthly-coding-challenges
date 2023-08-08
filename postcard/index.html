@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/f91f847224.js" crossorigin="anonymous"></script>
 </head>
@@ -13,34 +18,33 @@
             <div class="blok1">
                 <img class="img-egypt" src="./img/egypt.png" alt="">
             </div>
+
             <div class="blok2">
                 <div class="first-container">
-                    <div>
-                        <h1> img</h1>
+                    <img src="./img/Greeting.png" alt="">
+                    <img class="img-camello" src="./img/camello.png" alt="">
+                    <div class="text-from">
+                        <span>FROM:</span>
+
+                        <input  class="g-input" value="Your name🎉" type="text">
                     </div>
                 </div>
+                <div class="line"></div>
+
                 <div class="second-container">
                     <div class="g-stamp-location">
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <input class="g-input"  type="text">
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-envelope"></i>
-                                    <input class="g-input"  type="text">
-                                </div>
-                            <div>
-                                <i class="fa-solid fa-phone"></i>
-                                <input class="g-input"  type="text">
-                            </div>
-                        </div>
                         <div class="stamp">
+
                             <img class="img-stamp" src="./img/stamp.png" alt="">
                         </div>
                     </div>
-                    <div  class="container-form">
-                        <textarea class="g-input" name="" id="" rows="4" maxlength="200">
+                    
+                    <div>
+                        <div class="text-to">
+                            <span>TO:</span>
+                            <input  class="g-input" type="text" value="Recipient's name🎉">
+                        </div>
+                        <textarea class="g-input" name="" id="" rows="3" maxlength="120">Greetings from the land of the pharaohs and the pyramids!🐪✈️
                         </textarea>
                     </div>
                 </div>
@@ -48,7 +52,7 @@
             
         </div>
         <div class="container-flip">
-            <button  class="btn">
+            <button  class="btn" id="clear">
                 clear
             </button>
             <button class="btn" id="flip">

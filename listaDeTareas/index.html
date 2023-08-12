@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div>
+            <h2 style="color:rgb(77, 75, 75);">Lista de tareas</h2>
+        </div>
+        <form class="form" action="">
+            <input  class="input" type="text" placeholder="Ingresa una tarea">
+            <button class="btn-agregar" type="submit">Agregar</button>
+        </form>
+        <span class="message-nohomework">Empieza añadiendo tareas</span>
+        <ul id="lista">
+
+        </ul>
+        <template id="template">
+            <li class="container-li">
+                <span class="text-todo">${todo}</span>
+                <div class="container-btn">
+                    <input class="checkbox" id="check1" type="checkbox">
+                    <label for="check1" class="checkbox-label">
+                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9.72 16.31a1 1 0 0 0 1.41 0l6.32-6.32a1 1 0 1 0-1.41-1.41l-5.61 5.61-2.12-2.12a1 1 0 1 0-1.41 1.41l3 3z"/>
+                        </svg>
+                    </label>
+                    <input class="btn-delete" type="button" value="x">
+                </div>
+            </li>
+        </template>
+        <button class="bg">background</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
